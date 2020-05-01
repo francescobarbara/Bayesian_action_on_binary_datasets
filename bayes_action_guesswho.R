@@ -51,10 +51,7 @@ no_moves <- function(A,v,roww,threshold=1,count,y){
   
     
   x=v[y]
-  print('y is')
-  print(y)
-  print('x is')
-  print(x)
+ 
  
   
   if(A[1,x]== 1){
@@ -182,7 +179,7 @@ pick_suboptimal <- function(A){
   vec=numeric(n)
   for(i in c(1:n)){
     vec[i]= (abs(sum(A[,i])-m/2)+1)^(-1)
-    if((sum(A[,i]==m) | (sum(A[,i]==0)){
+    if((sum(A[,i]==m)) | (sum(A[,i]==0))){
       vec[i]=0
     }
   }
